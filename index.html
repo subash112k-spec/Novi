@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+<style>
+  :root{
+    --primary-color:rgb(33, 92, 92);
+    --secondary-color:rgba(33, 92, 92, 0.071);
+    --hover-color:rgba(33, 92, 92, 0.893);
+  }
+  .nav-button{
+    background-color: var(--primary-color);
+    color: white;
+  }
+  .second-heading{
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--primary-color);
+    padding: 5px 10px;
+    background-color: var(--secondary-color);
+  }
+  .hero-button{
+    background-color:var(--hover-color);
+    color: white;
+  }
+  .hero-button:hover{
+    background-color: var(--primary-color);
+    color: white;
+  }
+  .hero-span{
+    color: var(--primary-color);
+    font-size: 13px;
+  }
+  .hero-secbutton:hover{
+    border:1px solid var(--primary-color);
+
+  }
+  .img-cont{
+    background-color: rgba(36, 143, 143, 0.223);
+  }
+  .psw{
+    font-size:13px;
+  }
+  .percentage{
+    font-size: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.212);
+    height: fit-content;
+  }
+  .cont-list{
+    font-size: 14px;
+  }
+  .day{
+    font-size: 13px;
+    color: gray;
+    font-weight: 600;
+  }
+  .icon i{
+    color:rgba(33, 92, 92, 0.636);
+    font-size: 14px;
+  }
+  .menu-icon i{
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    padding: 1px 5px 1px 2px;
+    background-color: var(--primary-color);
+
+  }
+  .statement{
+    max-width:600px;
+    margin-left: 1px;
+    background-color: var(--hover-color);
+  }
+  .state-heading{
+    font-size: 11px;
+    color: rgb(204, 232, 201);
+  }
+  .state-icon i{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding-top: 13px;
+    background-color: rgba(255, 255, 255, 0.138);
+  }
+  .about{
+    margin-top:200px;
+  }
+  .about-list i{
+    color: var(--hover-color);
+    font-size: 20px;
+  }
+  .choose-icon i{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding-top: 19px;
+    color: var(--hover-color);
+    background-color: rgba(36, 143, 143, 0.223);
+  }
+  .choose{
+    background-color: var(--secondary-color);
+  }
+  .business{
+    background-color: var(--hover-color);
+  }
+  .business i{
+    color: rgba(252, 253, 253, 0.604);
+  }
+  .business-btn{
+    background-color: white;
+  }
+  .business-btn:hover{
+    color:white;
+  }
+  .rent{
+    color: rgb(204, 232, 201);
+  }
+  .sign{
+    height: 60px;
+    width: 60px;
+    background-color: var(--hover-color);
+    color:rgb(204, 232, 201);
+    padding-top: 15px;
+  }
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container">
+    
+    <a class="navbar-brand fw-bold" href="#"><img src="image/logo.jpg" alt="logo" width="50px"> Novi</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav nav-underline me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">How It Works</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Multipages</a></li>
+            <li><a class="dropdown-item" href="#">Services</a></li>
+            <li><a class="dropdown-item" href="#">Pricing</a></li>
+            <li><a class="dropdown-item" href="#">Dropstrat</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+      <button class="nav-button btn border" type="submit">Get Started</button>
+      </div>
+  </div>
+</nav>
+<section class="container my-5">
+  <div class="row">
+    <div class="col">
+    <div><small class="second-heading">INNOVATIVE FINTECH SOLUTIONS</small></div>
+    <div class="my-3">
+      <h1 class="display-5 fw-semibold">Secure, Efficient, and User-Friendly Financial Services</h1>
+    </div>
+    <p>Experience the future of finance with our secure, efficient, and user-friendly financial services.</p>
+    <div class="my-5">
+      <button class="hero-button btn border p-3 fw-bold text-white">Get Started Now</button>
+      <button class="hero-secbutton btn mx-2 p-3 fw-bold">Learn More &#129109;</button>
+    </div>
+    <span class="hero-span">TRUSTED BY MAJOR COMPANIES WORLDWIDE</span>
+    <div class="mt-4"><img src="image/airbnb.png" alt="" width="120px"> <img src="image/ibm.jpeg" alt="" width="120px"> <img src="image/google.png" alt="" width="120px"></div>
+    </div>
+    <div class="col position-relative">
+      <img src="image/hero-img.jpg" class="rounded-4 img-fulid">
+      <div class="w-50 p-2 rounded-4 position-absolute top-50 end-50 bg-white shadow">
+        <div class="img-cont p-2 rounded-4">
+        <div class="row">
+        <span class="psw col-10 fw-semibold"><small>**** **** **** 1227</small></span> <span class="menu-icon col text-white ms-2"><i class="fa-solid fa-ellipsis"></i></span>
+        </div>
+        <div class="row"> 
+          <span class="day">Expanses</span>
+          <h5 class="col-7">$420.50</h5>
+          <span class="percentage col mx-4 py-1 rounded-5"><i class="fa-solid fa-arrow-trend-up"></i> +2.25%</span>
+        </div>
+        </div>
+        <div class="row border-bottom py-2 mx-1">
+          <span class="icon col-1"><i class="fa-solid fa-cart-shopping"></i></span>
+          <div class="col-8">
+            <span class="cont-list fw-semibold">Groceries</span><br>
+            <span class="day">Today</span>
+          </div>
+          <span class="cont-list fw-semibold col">$120.50</span>
+        </div>
+        <div class="row border-bottom py-2 mx-1">
+          <span class="icon col-1"><i class="fa-solid fa-wifi"></i></span>
+          <div class="col-8">
+            <span class="cont-list fw-semibold">Internet Subscription</span><br>
+            <span class="day">Yesterday</span>
+          </div>
+          <span class="cont-list fw-semibold col">$50.50</span>
+        </div>
+        <div class="row py-2 mx-1">
+          <span class="icon col-1"><i class="fa-solid fa-car"></i></span>
+          <div class="col-8">
+            <span class="cont-list fw-semibold">Car Maintenance</span><br>
+            <span class="day">1 week ago</span>
+          </div>
+          <span class="cont-list fw-semibold col">$150.0</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="about container mb-5">
+  <div class="row">
+    <div class="col">
+      <div><img src="image/women-img.avif" class="rounded-4"></div>
+      <div class="statement row border my-3 rounded-4 py-2">
+        <span class="state-icon col-1 fs-4 text-white mt-3"><i class="fa-regular fa-lightbulb"></i></span>
+        <div class="col ms-3">
+          <span class="state-heading fw-bold">MISSION STATEMENT</span>
+          <P class="text-white fs-4">Our mission is to empower individuals and businesses by delivering secure, efficient, and user-friendly financial services.</P>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <span class="second-heading">ABOUT US</span>
+      <h2 class="fw-semibold my-4">Experience the future of finance with our secure, efficient, and user-friendly financial services</h2>
+      <p>Founded with the vision of revolutionizing the financial industry, we are a leading fintech company dedicated to providing innovative and secure financial solutions.</p>
+      <p class="my-4">Our cutting-edge platform ensures your transactions are safe, streamlined, and easy to manage, empowering you to take control of your financial journey with confidence and convenience.</p>
+      <h6 class="fw-bold mb-3">Key Values and Vision</h6>
+      <ul class="about-list row list-unstyled lh-lg">
+        <li class="col-4"><i class="fa-solid fa-circle-check"></i> Innovation</li>
+        <li class="col-4"><i class="fa-solid fa-circle-check"></i> Security</li>
+        <li class="col-4"><i class="fa-solid fa-circle-check"></i> User-Centric Design</li>
+        <li class="col-4"><i class="fa-solid fa-circle-check"></i> Transparency</li>
+        <li class="col-4"><i class="fa-solid fa-circle-check"></i> Empowerment</li>
+      </ul>
+   </div>
+  </div>
+</section>
+<section class="choose container p-5 rounded-4">
+  <div class="row">
+    <div class="col">
+      <h2 class="fw-semibold">Why Choose us</h2>
+      <p>Experience the future of finance with our secure, efficient, and user-friendly financial services. Our cutting-edge platform ensures your transactions are safe, streamlined, and easy to manage, empowering you to take control of your financial journey with confidence and convenience."</p>
+      <button class="hero-button btn border p-3 fw-bold text-white my-5"><i class="fa-solid fa-circle-play fs-4"></i> Watch the Video</button>
+    </div>
+    <div class="col">
+      <div class="row">
+        <div class="col-6">
+          <span class="choose-icon fs-5"><i class="fa-solid fa-user-check"></i></span>
+          <h3 class="fs-6 fw-bold my-3">User-Friendly Interface</h3>
+          <p>Easy navigation with responsive design for various devices.</p>
+        </div>
+        <div class="col-6">
+          <span class="choose-icon fs-5"><i class="fa-solid fa-chart-line"></i></span>
+          <h3 class="fs-6 fw-bold my-3">Financial Analytics</h3>
+          <p>Budget tracking, expense categorization, and personalized insights.</p>
+        </div>
+        <div class="col-6 my-3">
+          <span class="choose-icon fs-5"><i class="fa-solid fa-headset"></i></span>
+          <h3 class="fs-6 fw-bold my-3">Customer Support</h3>
+          <p>24/7 service via chat, email, phone, and a detailed help center.</p>
+        </div>
+        <div class="col-6 my-3">
+          <span class="choose-icon fs-5"><i class="fa-solid fa-user-lock"></i></span>
+          <h3 class="fs-6 fw-bold my-3">Security Features</h3>
+          <p>Data encryption, fraud detection, and prevention mechanisms.</p>
+        </div>
+      </div> 
+    </div>
+</div>
+</section>
+<section class="my-5 container">
+  <div class="text-center my-5">
+    <span class="second-heading">PRICING</span>
+    <h2 class="my-3 fw-semibold">Plan for every budget</h2>
+    <p>Experience the future of finance with our secure, efficient, and user-friendly financial services</p>
+  </div>
+  <div class="row">
+    <div class="col-4 border p-5 me-3 rounded-4">
+      <h2 class="fw-semibold">Personal</h2>
+      <p>Choose a plan that fits your personal financial needs and start managing your finances more effectively.</p>
+      <p class="my-4"><span class="fs-1 fw-bold">$7</span>/month</p>
+      <button class="hero-button btn border p-3 fw-bold text-white">Get Started</button>
+  </div>
+  <div class="business col border ms-3 p-5 rounded-4">
+    <div class="row">
+      <div class="col">
+        <h2 class="fw-semibold text-white">Business</h2>
+        <p class="text-white">Optimize your business financial operations with our tailored business plans.</p>
+        <p class="rent my-4"><span class="fw-bold fs-1">$29</span>/month</p>
+        <button class="business-btn btn border p-3 fw-bold">Get Started</button>
+      </div>
+      <div class="col">
+        <span class="state-heading fw-bold">FEATURES</span>
+        <ul class=" list-unstyled text-white">
+          <li class="my-3"><i class="fa-regular fa-circle-check fs-5"></i> Personalized financial insights and reports</li>
+          <li class="my-3"><i class="fa-regular fa-circle-check fs-5"></i> Priority customer support</li>
+          <li class="my-3"><i class="fa-regular fa-circle-check fs-5"></i> Access to exclusive investment opportunities</li>
+          <li class="my-3"><i class="fa-regular fa-circle-check fs-5"></i> AI-driven financial recommendations</li>
+        </ul>
+      </div>
+    </div>
+ </div>
+</div>
+</section>
+<section class="container">
+  <div class="text-center">
+    <span class="second-heading">HOW IT WORKS</span>
+    <h2 class="fw-semibold">How It Works</h2>
+    <p>Our platform is designed to make managing your finances simple and efficient. Follow these easy steps to get started:</p>
+ </div>
+ <div class="row text-center">
+  <div class="col">
+    <div class="sign rounded-circle mx-auto">1</div>
+    <h3>Sign Up</h3>
+    <p>Visit our website or download our app to sign up. Provide basic information to set up your secure account.</p>
+  </div>
+  <div class="col">
+    <div class="sign rounded-circle mx-auto">2</div>
+    <h3>Set Up Your Profile</h3>
+    <p>Add your personal or business details to tailor the platform to your specific needs.</p>
+  </div>
+  <div class="col">
+    <div class="sign rounded-circle mx-auto">3</div>
+    <h3>Explore Features</h3>
+    <p>Access your dashboard for a summary of your finances: balances, recent transactions, and insights.</p>
+  </div>
+  <div class="col">
+    <div class="sign rounded-circle mx-auto">4</div>
+    <h3>Invest and Grow</h3>
+    <p>Discover a variety of investment opportunities tailored to your financial goals.</p>
+  </div>
+ </div>
+  
+
+</section>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
